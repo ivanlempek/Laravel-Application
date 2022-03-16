@@ -26,6 +26,7 @@ Funcionalidades:
 -------------------------
 
 Para o funcionamento da aplicação:
+	- sudo apt-get update
 	- composer install
 	- php artisan key:generate
 
@@ -36,7 +37,6 @@ Para entrar dentro do workspace da aplicação:
 	- sudo docker-compose exec --user=laradock workspace bash
 
 Comandos utilizados dentro do workspace:
-	- sudo apt-get update
 	- php artisan migrate
 	- php artisan tinker
 
