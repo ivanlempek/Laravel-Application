@@ -46,6 +46,9 @@ Instalando o toastr ( https://github.com/yoeunes/toastr ):
 Notificação de e-mail usando o MailTrap ( https://mailtrap.io/ ):
 	- Fazer as alterações no .env de acordo com o MailTrap.
 	- Alterar também no .env: QUEUE_CONNECTION=database
+	- Rodar os comandos:
+	- php artisan config:cache
+	- php artisan config:clear
 	- Para ativar a fila e enviar o e-mail : php artisan queue:work --tries=3
 	- Depois basta preencher o formulário e enviar. 	
 
