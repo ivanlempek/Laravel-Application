@@ -25,6 +25,8 @@ Funcionalidades:
 
 -------------------------
 
+Para o funcionamento da aplicação e instalção das dependências:
+	- composer install
 
 Para o levantamento do ambiente foi usado Docker e Laradock, dos quais usei os seguintes containers:
 	- sudo docker-compose up -d nginx mysql phpmyadmin
