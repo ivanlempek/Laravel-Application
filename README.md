@@ -25,7 +25,7 @@ Funcionalidades:
 
 -------------------------
 
-Para o funcionamento da aplicação e instalção das dependências:
+Para o funcionamento da aplicação:
 	- composer install
 
 Para o levantamento do ambiente foi usado Docker e Laradock, dos quais usei os seguintes containers:
