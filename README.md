@@ -27,6 +27,7 @@ Funcionalidades:
 
 Para o funcionamento da aplicação:
 	- composer install
+	- php artisan key:generate
 
 Para o levantamento do ambiente foi usado Docker e Laradock, dos quais usei os seguintes containers:
 	- sudo docker-compose up -d nginx mysql phpmyadmin
