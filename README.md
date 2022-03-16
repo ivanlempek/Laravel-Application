@@ -4,7 +4,7 @@ Dependências para criar esta aplicação no Laravel:
 
 -wsl 2.0
 -laravel 9.4.1  / composer 2.2.7
--docker 20.10.7 / docker-compose 1.29.2
+-docker 20.10.7 / docker-compose 1.29.2 / Laradock
 
 -------------------------
 Resumo da aplicação:
@@ -26,7 +26,7 @@ Funcionalidades:
 -------------------------
 
 
-Para o levantamento do ambiente foi usado o Docker, do qual usei os seguintes containers:
+Para o levantamento do ambiente foi usado Docker e Laradock, dos quais usei os seguintes containers:
 	- sudo docker-compose up -d nginx mysql phpmyadmin
 
 Para entrar dentro do workspace da aplicação:
