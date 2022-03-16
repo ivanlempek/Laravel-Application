@@ -26,31 +26,31 @@ Funcionalidades:
 -------------------------
 
 Para o funcionamento da aplicação:
-	- sudo apt-get update.
-	- composer install.
-	- php artisan key:generate.
+	- sudo apt-get update
+	- composer install
+	- php artisan key:generate
 
 Para o levantamento do ambiente foi usado Docker e Laradock, dos quais usei os seguintes containers:
-	- sudo docker-compose up -d nginx mysql phpmyadmin.
+	- sudo docker-compose up -d nginx mysql phpmyadmin
 
 Para entrar dentro do workspace da aplicação:
-	- sudo docker-compose exec --user=laradock workspace bash.
+	- sudo docker-compose exec --user=laradock workspace bash
 
 Comandos utilizados dentro do workspace:
-	- php artisan migrate.
-	- php artisan tinker.
+	- php artisan migrate
+	- php artisan tinker
 
 Instalando o toastr ( https://github.com/yoeunes/toastr ): 
-	- composer require yoeunes/toastr.
+	- composer require yoeunes/toastr
 
 Notificação de e-mail usando o MailTrap ( https://mailtrap.io/ ):
-	- Fazer as alterações no .env de acordo com o MailTrap.
-	- Alterar também no .env: QUEUE_CONNECTION=database.
+	- Fazer as alterações no .env de acordo com o MailTrap
+	- Alterar também no .env: QUEUE_CONNECTION=database
 	- Rodar os comandos:
-	- php artisan config:cache.
-	- php artisan config:clear.
-	- Para ativar a fila e enviar o e-mail : php artisan queue:work --tries=3.
-	- Depois basta preencher o formulário e enviar. 	
+	- php artisan config:cache
+	- php artisan config:clear
+	- Para ativar a fila e enviar o e-mail : php artisan queue:work --tries=3
+	- Depois basta preencher o formulário e enviar.	
 
 Inserindo uma categoria de produtos no banco de dados através do tinker:
 	- $category = Category::create(['name' => 'Categoria de teste 2', 'image' => 'images/markus-spiske-hvSr_CVecVI-unsplash.jpg', 'description' => 'Descrição da categoria de teste 2']);
